@@ -172,6 +172,7 @@ groupBy(medallion, dropoff_borough)        filter pickup == dropoff borough
 
 ### Query 1 — Average Idle Time per Destination Borough
 
+```
 +--------------------+---------------+------------------+
 |           medallion|dropoff_borough|     avg_idle_mins|
 +--------------------+---------------+------------------+
@@ -197,10 +198,11 @@ groupBy(medallion, dropoff_borough)        filter pickup == dropoff borough
 |005F00B38F46E2100...|         Queens|              13.0|
 +--------------------+---------------+------------------+
 only showing 20 rows
-
+```
 
 ### Query 2 — Intra-Borough Trips
 
+```
 +--------------+---------+
 |pickup_borough|num_trips|
 +--------------+---------+
@@ -210,9 +212,11 @@ only showing 20 rows
 |         Bronx|       49|
 | Staten Island|        1|
 +--------------+---------+
+```
 
 ### Query 3 — Inter-Borough Trips
 
+```
 +--------------+---------+
 |pickup_borough|num_trips|
 +--------------+---------+
@@ -222,4 +226,4 @@ only showing 20 rows
 |         Bronx|       27|
 | Staten Island|        1|
 +--------------+---------+
-
+```
